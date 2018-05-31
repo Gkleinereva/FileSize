@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1 File Sizer
+	p Upload a file using the input below to see the size of your file!  As a shortcut, leave this website and look at the file properties by right clicking on the file from your computer
+
+	form(method='POST' action='' enctype="multipart/form-data")
+		div.form-group
+			label(for='file') File: 
+			input#file.form-control(type='file' placeholder='Your File' name='file' required='true')
+			button.btn.btn-primary(type='submit') Submit
